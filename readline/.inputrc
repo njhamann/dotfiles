@@ -1,0 +1,10 @@
+$include /etc/inputrc
+
+# Up/Down search history for commands starting with what's typed
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# Case-insensitive tab completion, show all matches on first Tab
+set completion-ignore-case on
+set show-all-if-ambiguous on
+set colored-stats on
