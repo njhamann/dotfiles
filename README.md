@@ -1,12 +1,11 @@
 dotfiles
 ========
 
-Config files for vim and tmux (plus an old bashrc), organized as GNU Stow packages.
+Config files for vim and tmux, organized as GNU Stow packages.
 
 ```
-git clone https://github.com/njhamann/environment-config-files.git ~/dotfiles
+git clone https://github.com/njhamann/dotfiles.git ~/dotfiles
 ~/dotfiles/install.sh            # links vim and tmux into ~
-~/dotfiles/install.sh bash       # optional: also link the bashrc
 ```
 
 `install.sh` uses `stow` if it's installed and falls back to `ln -s` otherwise.
@@ -20,5 +19,5 @@ which are loaded if present and not tracked here.
 Quick grab on a throwaway server:
 
 ```
-curl -fsSL https://raw.githubusercontent.com/njhamann/environment-config-files/master/vim/.vimrc -o ~/.vimrc
+curl -fsSL https://raw.githubusercontent.com/njhamann/dotfiles/master/vim/.vimrc -o ~/.vimrc
 ```
